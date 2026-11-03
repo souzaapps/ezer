@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Ezer.app (site)</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Ezer (site)" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <style id="expo-reset">
+      html, body { height: 100%; }
+      body { overflow: hidden; }
+      #root { display: flex; height: 100%; flex: 1; }
+    </style>
+    <script>
+      // Guarda o aviso de "instalavel" do navegador antes de o app carregar,
+      // para o botao de Configuracoes poder usa-lo depois.
+      window.__atalhoPrompt = null;
+      window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); window.__atalhoPrompt = e; window.dispatchEvent(new Event('atalho-pronto')); });
+      window.addEventListener('appinstalled', function () { window.__atalhoPrompt = null; window.dispatchEvent(new Event('atalho-pronto')); });
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js', { scope: './' }).catch(function () {}); });
+      }
+    </script>
+  <meta name="theme-color" content="#F7F3E8">
+<link rel="icon" href="/favicon.ico"/></head>
+  <body>
+    <noscript>Você precisa ativar o JavaScript para usar o Ezer.app.</noscript>
+    <div id="root"></div>
+  <script src="/_expo/static/js/web/index-35417f093fdcdd492feb876dd4cb4050.js" defer></script>
+</body>
+</html>
