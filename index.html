@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ezer.app — Sua vida com Deus, um dia de cada vez</title>
+<meta name="description" content="O Ezer.app é um aplicativo gratuito de devocionais diários, jejum em grupo, duplas de oração e plano de leitura bíblica, em português.">
+<meta property="og:title" content="Ezer.app — Sua vida com Deus, um dia de cada vez">
+<meta property="og:description" content="Devocionais diários, oração em dupla, jejum em grupo e plano de leitura bíblica, em português.">
+<meta property="og:site_name" content="Ezer.app">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://ezerapp.blog/">
+<meta property="og:image" content="https://ezerapp.blog/og-ezer.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icone-app.png">
+<link rel="apple-touch-icon" href="icone-app.png">
+<style>
+  :root { --bg:#F7F3E8; --card:#fff; --navy:#1A3A5C; --gold:#C8955A; --text:#1A2D4F; --muted:#5B6472; --border:#E5E0D5; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.65; }
+  header,main,footer { max-width:720px; margin:0 auto; padding:0 20px; }
+  header { padding-top:48px; text-align:center; }
+  .logo { width:84px; height:84px; border-radius:20px; box-shadow:0 4px 14px rgba(26,58,92,.15); }
+  h1 { font-size:30px; line-height:1.2; margin:18px 0 8px; color:var(--navy); letter-spacing:-.5px; }
+  .lead { font-size:17px; color:var(--muted); max-width:520px; margin:0 auto; }
+  .botoes { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin:28px 0 6px; }
+  .btn { display:inline-block; text-decoration:none; font-weight:700; font-size:15px; padding:14px 26px; border-radius:12px; }
+  .primario { background:var(--navy); color:var(--bg); }
+  .secundario { background:var(--card); color:var(--navy); border:1px solid var(--border); }
+  .aviso { font-size:13px; color:var(--muted); text-align:center; margin-top:8px; }
+  h2 { font-size:19px; color:var(--navy); margin:40px 0 14px; }
+  .grade { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:12px; }
+  .item { background:var(--card); border-radius:14px; padding:18px; border:1px solid var(--border); }
+  .item strong { display:block; color:var(--navy); margin-bottom:4px; }
+  .item span { font-size:14px; color:var(--muted); }
+  footer { padding-top:44px; padding-bottom:40px; text-align:center; font-size:13px; color:var(--muted); }
+  footer a { color:var(--navy); }
+  footer nav { margin-bottom:10px; }
+  footer nav a { margin:0 10px; }
+</style>
+</head>
+<body>
+<header>
+  <img class="logo" src="icone-app.png" alt="Ezer.app">
+  <h1>Ezer.app</h1>
+  <p class="lead">Sua vida com Deus, um dia de cada vez. Devocionais diários, oração em dupla, jejum em grupo e plano de leitura bíblica, em português.</p>
+  <div class="botoes">
+    <a class="btn primario" href="https://play.google.com/store/apps/details?id=com.ezer.app">Baixar na Google Play</a>
+    <a class="btn secundario" id="btnIos" href="#" style="display:none"></a>
+    <a class="btn secundario" href="app/">Usar no navegador</a>
+  </div>
+  <p class="aviso" id="avisoIos">Versão para iPhone: em breve.</p>
+</header>
+<main>
+  <h2>O que você encontra no Ezer.app</h2>
+  <div class="grade">
+    <div class="item"><strong>Devocionais diários</strong><span>Séries temáticas com leitura, reflexão e oração, para todos os dias.</span></div>
+    <div class="item"><strong>A Chama</strong><span>O registro da sua sequência de dias de devocional, para criar constância.</span></div>
+    <div class="item"><strong>Duplas e grupos</strong><span>Caminhe com alguém: devocional em dupla, jejum em grupo e chat.</span></div>
+    <div class="item"><strong>Plano de leitura bíblica</strong><span>Um plano no seu ritmo, sozinho ou em grupo, com calendário.</span></div>
+  </div>
+  <h2>Gratuito, com a opção Pro</h2>
+  <p style="color:var(--muted)">O Ezer.app é gratuito, com anúncios. O plano Pro, disponível no aplicativo, remove os anúncios e amplia os limites de séries e grupos. A versão para navegador não inclui notificações, leitura em voz nem a compra do Pro.</p>
+  <p style="color:var(--muted); margin-top:12px">Desenvolvido por Gabriel Lima de Souza (Souza Apps), desenvolvedor independente no Brasil.</p>
+</main>
+<footer>
+  <nav><a href="privacidade.html">Política de Privacidade</a><a href="termos.html">Termos de Uso</a><a href="mailto:suporte.ezer.app@gmail.com">Contato</a></nav>
+  Ezer.app © 2026 Souza Apps
+</footer>
+<script src="ezer-config.js"></script>
+<script>
+  (function () {
+    var L = window.EZER_LINKS || {};
+    if (L.playStore) document.querySelector(".primario").href = L.playStore;
+    if (L.appStore) {
+      var b = document.getElementById("btnIos");
+      b.href = L.appStore; b.textContent = "Baixar na App Store"; b.style.display = "inline-block";
+      document.getElementById("avisoIos").style.display = "none";
+    }
+  })();
+</script>
+</body>
+</html>
