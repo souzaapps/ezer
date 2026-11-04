@@ -40,10 +40,15 @@
   .lista a.post { display:block; background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px 18px; margin-bottom:12px; text-decoration:none; color:var(--text); }
   .lista a.post strong { display:block; color:var(--navy); font-size:18px; margin-bottom:4px; }
   .lista a.post span { color:var(--muted); font-size:15px; line-height:1.5; display:block; }
+  main p a, main li a, .nota a { color:var(--navy); }
   .mais { margin-top:30px; font-size:15px; } .mais a { color:var(--navy); }
   footer { padding-top:30px; padding-bottom:40px; text-align:center; font-size:13px; color:var(--muted); }
   footer a { color:var(--navy); margin:0 8px; }
+  .ezer-ad { margin:26px 0; } .ezer-ad:empty { margin:0; }
+  .leia { margin:34px 0 6px; } .leia h2 { margin-top:0; }
+  .prox { display:block; background:var(--navy); color:var(--bg); text-decoration:none; font-weight:700; border-radius:12px; padding:14px 18px; margin-top:14px; }
   @media (prefers-color-scheme: dark) {
+    .prox { color:#1A1A2E; }
     :root { --bg:#1A1A2E; --card:#252540; --navy:#E8D9B8; --text:#E8E4D8; --muted:#A5ABB8; --border:#2E2E4E; }
     .btn { color:#1A1A2E; }
   }
@@ -59,6 +64,7 @@
 <p>Uma pessoa cria a dupla e escolhe uma série. O aplicativo gera um código de convite de cinco caracteres, ou um link, que é enviado ao parceiro. Quando ele entra, os dois passam a seguir a mesma série. Cada um lê quando puder, e o progresso de ambos fica visível na tela da dupla, o que cria uma companhia silenciosa mesmo quando vocês não estão conversando.</p>
 <h2>Propósitos e chat</h2>
 <p>Dentro da dupla, vocês podem registrar <strong>propósitos</strong>: pedidos de oração, decisões e metas espirituais que querem acompanhar juntos. Também há um <strong>chat</strong> para conversar sobre o que leram, trocar um incentivo ou avisar que oraram pelo outro.</p>
+<div class="ezer-ad"></div>
 <h2>Com quem formar uma dupla</h2>
 <ul>
 <li>Cônjuges que querem orar juntos mas nunca acham o momento.</li>
@@ -69,7 +75,7 @@
 <h2>Cuidado com o ambiente</h2>
 <p>Como a dupla envolve texto escrito entre pessoas, o aplicativo traz ferramentas de segurança: é possível denunciar um conteúdo, bloquear alguém e há um filtro contra termos ofensivos. Mesmo assim, recomendamos formar duplas com pessoas que você conhece. Veja os <a href="../termos.html">Termos de Uso</a> para os detalhes das regras de convivência.</p>
 <div class="nota">O aplicativo é uma ferramenta de apoio e não substitui o cuidado pastoral, o aconselhamento ou a comunhão presencial da sua igreja local.</div>
-<div class="cta"><p><strong>Experimente no Ezer.app</strong></p><p style="color:var(--muted);font-size:15px">Gratuito, em português. Baixe o aplicativo ou use direto no navegador.</p>
+<div class="ezer-ad"></div><div class="leia"><h2>Leia também</h2><div class="lista"><a class="post" href="grupos-de-jejum.html"><strong>Grupos de jejum: jejuar em comunidade</strong><span>Tipos de jejum disponíveis, como criar um grupo e acompanhar o progresso coletivo.</span></a><a class="post" href="plano-de-leitura-biblica.html"><strong>Plano de leitura bíblica: no seu ritmo, sozinho ou em grupo</strong><span>Como montar um plano de leitura, escolher a duração e acompanhar pelo calendário.</span></a></div><a class="prox" href="grupos-de-jejum.html">Próximo artigo →</a></div><div class="cta"><p><strong>Experimente no Ezer.app</strong></p><p style="color:var(--muted);font-size:15px">Gratuito, em português. Baixe o aplicativo ou use direto no navegador.</p>
 <a class="btn" href="../index.html">Baixar o aplicativo</a><a class="btn sec" href="../app/">Usar no navegador</a></div>
 <p class="mais"><a href="index.html">← Todos os artigos do blog</a></p>
 </main>
@@ -77,5 +83,6 @@
   <nav><a href="../index.html">Início</a><a href="index.html">Blog</a><a href="../privacidade.html">Privacidade</a><a href="../termos.html">Termos</a><a href="mailto:suporte.ezer.app@gmail.com">Contato</a></nav>
   <p style="margin-top:10px">Ezer.app © 2026 Souza Apps</p>
 </footer>
+<script src="../ezer-ads.js"></script>
 </body>
 </html>

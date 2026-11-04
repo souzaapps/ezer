@@ -40,10 +40,15 @@
   .lista a.post { display:block; background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px 18px; margin-bottom:12px; text-decoration:none; color:var(--text); }
   .lista a.post strong { display:block; color:var(--navy); font-size:18px; margin-bottom:4px; }
   .lista a.post span { color:var(--muted); font-size:15px; line-height:1.5; display:block; }
+  main p a, main li a, .nota a { color:var(--navy); }
   .mais { margin-top:30px; font-size:15px; } .mais a { color:var(--navy); }
   footer { padding-top:30px; padding-bottom:40px; text-align:center; font-size:13px; color:var(--muted); }
   footer a { color:var(--navy); margin:0 8px; }
+  .ezer-ad { margin:26px 0; } .ezer-ad:empty { margin:0; }
+  .leia { margin:34px 0 6px; } .leia h2 { margin-top:0; }
+  .prox { display:block; background:var(--navy); color:var(--bg); text-decoration:none; font-weight:700; border-radius:12px; padding:14px 18px; margin-top:14px; }
   @media (prefers-color-scheme: dark) {
+    .prox { color:#1A1A2E; }
     :root { --bg:#1A1A2E; --card:#252540; --navy:#E8D9B8; --text:#E8E4D8; --muted:#A5ABB8; --border:#2E2E4E; }
     .btn { color:#1A1A2E; }
   }
@@ -59,12 +64,13 @@
 <p>O aplicativo tem vários temas: <strong>Claro</strong>, <strong>Escuro</strong>, <strong>Rosa</strong>, <strong>Moderno</strong>, <strong>Retro</strong> e <strong>Black</strong>. O escuro é útil para ler à noite ou em ambientes com pouca luz; o claro, para o dia; os demais são questão de gosto. É possível trocar a qualquer momento em Configurações.</p>
 <h2>Tamanho da fonte</h2>
 <p>Há opções de tamanho de fonte, para quem prefere um texto mais compacto ou mais confortável. Isso é especialmente útil para pessoas mais velhas, ou para qualquer um que lê em movimento.</p>
+<div class="ezer-ad"></div>
 <h2>Compartilhar o pensamento do dia</h2>
 <p>Quando uma frase do devocional toca você, é natural querer repassar. O aplicativo permite compartilhar o pensamento do dia em um formato visual, e você escolhe o estilo da imagem. Também é possível compartilhar o link de uma série ou de um devocional; quem abrir vê uma página de convite, com o botão para abrir no app ou continuar no navegador.</p>
 <p>Um conselho: compartilhar é ótimo, mas uma mensagem pessoal, dizendo por que aquele texto lembrou da pessoa, vale mais do que qualquer imagem bonita.</p>
 <h2>Na versão para navegador</h2>
 <p>Os temas, a fonte e o compartilhamento de link funcionam também no navegador. A leitura do devocional em voz alta e as notificações estão disponíveis apenas no aplicativo para celular.</p>
-<div class="cta"><p><strong>Experimente no Ezer.app</strong></p><p style="color:var(--muted);font-size:15px">Gratuito, em português. Baixe o aplicativo ou use direto no navegador.</p>
+<div class="ezer-ad"></div><div class="leia"><h2>Leia também</h2><div class="lista"><a class="post" href="lembretes-e-widget.html"><strong>Lembretes e widget: não deixe o hábito esfriar</strong><span>Como usar o lembrete diário e o widget na tela inicial para manter a constância.</span></a><a class="post" href="conta-e-seguranca.html"><strong>Conta, privacidade e segurança nas duplas e grupos</strong><span>Como funciona a conta, o que fica guardado, e as ferramentas de denúncia e bloqueio.</span></a></div><a class="prox" href="lembretes-e-widget.html">Próximo artigo →</a></div><div class="cta"><p><strong>Experimente no Ezer.app</strong></p><p style="color:var(--muted);font-size:15px">Gratuito, em português. Baixe o aplicativo ou use direto no navegador.</p>
 <a class="btn" href="../index.html">Baixar o aplicativo</a><a class="btn sec" href="../app/">Usar no navegador</a></div>
 <p class="mais"><a href="index.html">← Todos os artigos do blog</a></p>
 </main>
@@ -72,5 +78,6 @@
   <nav><a href="../index.html">Início</a><a href="index.html">Blog</a><a href="../privacidade.html">Privacidade</a><a href="../termos.html">Termos</a><a href="mailto:suporte.ezer.app@gmail.com">Contato</a></nav>
   <p style="margin-top:10px">Ezer.app © 2026 Souza Apps</p>
 </footer>
+<script src="../ezer-ads.js"></script>
 </body>
 </html>

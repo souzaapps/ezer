@@ -40,10 +40,15 @@
   .lista a.post { display:block; background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px 18px; margin-bottom:12px; text-decoration:none; color:var(--text); }
   .lista a.post strong { display:block; color:var(--navy); font-size:18px; margin-bottom:4px; }
   .lista a.post span { color:var(--muted); font-size:15px; line-height:1.5; display:block; }
+  main p a, main li a, .nota a { color:var(--navy); }
   .mais { margin-top:30px; font-size:15px; } .mais a { color:var(--navy); }
   footer { padding-top:30px; padding-bottom:40px; text-align:center; font-size:13px; color:var(--muted); }
   footer a { color:var(--navy); margin:0 8px; }
+  .ezer-ad { margin:26px 0; } .ezer-ad:empty { margin:0; }
+  .leia { margin:34px 0 6px; } .leia h2 { margin-top:0; }
+  .prox { display:block; background:var(--navy); color:var(--bg); text-decoration:none; font-weight:700; border-radius:12px; padding:14px 18px; margin-top:14px; }
   @media (prefers-color-scheme: dark) {
+    .prox { color:#1A1A2E; }
     :root { --bg:#1A1A2E; --card:#252540; --navy:#E8D9B8; --text:#E8E4D8; --muted:#A5ABB8; --border:#2E2E4E; }
     .btn { color:#1A1A2E; }
   }
@@ -58,12 +63,13 @@
 <h2>Lembrete diário</h2>
 <p>O Ezer.app pode enviar um lembrete diário no horário que você escolher. Para isso, o aparelho precisa permitir notificações para o aplicativo. Se estiverem desligadas, o app tem uma tela que guia você, passo a passo, até as configurações do celular, e avisa quando tudo estiver pronto.</p>
 <p>Dica: escolha um horário associado a algo que você já faz, como o café da manhã, o trajeto ao trabalho ou o momento de deitar. O hábito novo gruda melhor num hábito antigo.</p>
+<div class="ezer-ad"></div>
 <h2>Widget na tela inicial</h2>
 <p>No Android e no iPhone, o aplicativo oferece um widget que mostra o seu progresso direto na tela inicial. Ver a sua caminhada toda vez que desbloqueia o celular funciona como um convite discreto. O app traz um tutorial passo a passo para adicionar o widget, já que o caminho muda conforme o aparelho.</p>
 <h2>Leitura em voz</h2>
 <p>Para momentos em que não dá para olhar para a tela, o aplicativo pode ler o devocional em voz alta, e você escolhe a voz.</p>
 <div class="nota">Lembretes, widget e leitura em voz são recursos do aplicativo para celular. A versão para navegador não os inclui.</div>
-<div class="cta"><p><strong>Experimente no Ezer.app</strong></p><p style="color:var(--muted);font-size:15px">Gratuito, em português. Baixe o aplicativo ou use direto no navegador.</p>
+<div class="ezer-ad"></div><div class="leia"><h2>Leia também</h2><div class="lista"><a class="post" href="conta-e-seguranca.html"><strong>Conta, privacidade e segurança nas duplas e grupos</strong><span>Como funciona a conta, o que fica guardado, e as ferramentas de denúncia e bloqueio.</span></a><a class="post" href="devocionais-diarios.html"><strong>Devocionais diários: um encontro curto, todos os dias</strong><span>Leitura, reflexão e oração em poucos minutos: como o devocional do Ezer.app é montado e como aproveitá-lo.</span></a></div><a class="prox" href="conta-e-seguranca.html">Próximo artigo →</a></div><div class="cta"><p><strong>Experimente no Ezer.app</strong></p><p style="color:var(--muted);font-size:15px">Gratuito, em português. Baixe o aplicativo ou use direto no navegador.</p>
 <a class="btn" href="../index.html">Baixar o aplicativo</a><a class="btn sec" href="../app/">Usar no navegador</a></div>
 <p class="mais"><a href="index.html">← Todos os artigos do blog</a></p>
 </main>
@@ -71,5 +77,6 @@
   <nav><a href="../index.html">Início</a><a href="index.html">Blog</a><a href="../privacidade.html">Privacidade</a><a href="../termos.html">Termos</a><a href="mailto:suporte.ezer.app@gmail.com">Contato</a></nav>
   <p style="margin-top:10px">Ezer.app © 2026 Souza Apps</p>
 </footer>
+<script src="../ezer-ads.js"></script>
 </body>
 </html>

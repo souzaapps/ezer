@@ -40,10 +40,15 @@
   .lista a.post { display:block; background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px 18px; margin-bottom:12px; text-decoration:none; color:var(--text); }
   .lista a.post strong { display:block; color:var(--navy); font-size:18px; margin-bottom:4px; }
   .lista a.post span { color:var(--muted); font-size:15px; line-height:1.5; display:block; }
+  main p a, main li a, .nota a { color:var(--navy); }
   .mais { margin-top:30px; font-size:15px; } .mais a { color:var(--navy); }
   footer { padding-top:30px; padding-bottom:40px; text-align:center; font-size:13px; color:var(--muted); }
   footer a { color:var(--navy); margin:0 8px; }
+  .ezer-ad { margin:26px 0; } .ezer-ad:empty { margin:0; }
+  .leia { margin:34px 0 6px; } .leia h2 { margin-top:0; }
+  .prox { display:block; background:var(--navy); color:var(--bg); text-decoration:none; font-weight:700; border-radius:12px; padding:14px 18px; margin-top:14px; }
   @media (prefers-color-scheme: dark) {
+    .prox { color:#1A1A2E; }
     :root { --bg:#1A1A2E; --card:#252540; --navy:#E8D9B8; --text:#E8E4D8; --muted:#A5ABB8; --border:#2E2E4E; }
     .btn { color:#1A1A2E; }
   }
@@ -59,6 +64,7 @@
 <p>Em vez de impor um calendário fixo, o plano deixa você escolher o seu ritmo: ler em <strong>um ano</strong>, em <strong>seis meses</strong> ou em um prazo <strong>personalizado</strong>. Também é possível escolher em quais <strong>dias da semana</strong> você quer ler, para que o plano caiba na sua rotina e não numa rotina idealizada.</p>
 <h2>Calendário</h2>
 <p>O progresso aparece em um calendário, onde é possível ver o que foi lido, o que está previsto e onde você está em relação ao caminho. Ver o percurso ajuda a perceber que o objetivo é alcançável, e também a retomar sem se perder quando você fica alguns dias fora.</p>
+<div class="ezer-ad"></div>
 <h2>Sozinho ou em grupo</h2>
 <p>O plano pode ser seguido sozinho ou em grupo. Em grupo, as pessoas leem a mesma passagem no mesmo dia, o que abre espaço para conversas reais: o que te chamou atenção? O que você não entendeu? Convites são feitos por link ou código, e é fácil começar com a família, um grupo pequeno ou a turma da igreja.</p>
 <h2>Dicas para chegar ao fim</h2>
@@ -69,7 +75,7 @@
 <li>Nos trechos áridos, como genealogias e leis, pergunte: o que isso revela sobre o caráter de Deus?</li>
 </ul>
 <div class="nota">O plano é uma ajuda de organização. Para estudo mais aprofundado, procure também o ensino da sua igreja e boas obras de referência.</div>
-<div class="cta"><p><strong>Experimente no Ezer.app</strong></p><p style="color:var(--muted);font-size:15px">Gratuito, em português. Baixe o aplicativo ou use direto no navegador.</p>
+<div class="ezer-ad"></div><div class="leia"><h2>Leia também</h2><div class="lista"><a class="post" href="meu-diario.html"><strong>Meu diário: guardar o que Deus falou com você</strong><span>Como registrar reflexões ao final de cada devocional e por que reler faz bem.</span></a><a class="post" href="favoritos.html"><strong>Favoritos: voltar aos devocionais que marcaram você</strong><span>Como marcar e reencontrar os devocionais que mais tocaram o seu coração.</span></a></div><a class="prox" href="meu-diario.html">Próximo artigo →</a></div><div class="cta"><p><strong>Experimente no Ezer.app</strong></p><p style="color:var(--muted);font-size:15px">Gratuito, em português. Baixe o aplicativo ou use direto no navegador.</p>
 <a class="btn" href="../index.html">Baixar o aplicativo</a><a class="btn sec" href="../app/">Usar no navegador</a></div>
 <p class="mais"><a href="index.html">← Todos os artigos do blog</a></p>
 </main>
@@ -77,5 +83,6 @@
   <nav><a href="../index.html">Início</a><a href="index.html">Blog</a><a href="../privacidade.html">Privacidade</a><a href="../termos.html">Termos</a><a href="mailto:suporte.ezer.app@gmail.com">Contato</a></nav>
   <p style="margin-top:10px">Ezer.app © 2026 Souza Apps</p>
 </footer>
+<script src="../ezer-ads.js"></script>
 </body>
 </html>

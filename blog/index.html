@@ -40,10 +40,15 @@
   .lista a.post { display:block; background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px 18px; margin-bottom:12px; text-decoration:none; color:var(--text); }
   .lista a.post strong { display:block; color:var(--navy); font-size:18px; margin-bottom:4px; }
   .lista a.post span { color:var(--muted); font-size:15px; line-height:1.5; display:block; }
+  main p a, main li a, .nota a { color:var(--navy); }
   .mais { margin-top:30px; font-size:15px; } .mais a { color:var(--navy); }
   footer { padding-top:30px; padding-bottom:40px; text-align:center; font-size:13px; color:var(--muted); }
   footer a { color:var(--navy); margin:0 8px; }
+  .ezer-ad { margin:26px 0; } .ezer-ad:empty { margin:0; }
+  .leia { margin:34px 0 6px; } .leia h2 { margin-top:0; }
+  .prox { display:block; background:var(--navy); color:var(--bg); text-decoration:none; font-weight:700; border-radius:12px; padding:14px 18px; margin-top:14px; }
   @media (prefers-color-scheme: dark) {
+    .prox { color:#1A1A2E; }
     :root { --bg:#1A1A2E; --card:#252540; --navy:#E8D9B8; --text:#E8E4D8; --muted:#A5ABB8; --border:#2E2E4E; }
     .btn { color:#1A1A2E; }
   }
@@ -61,5 +66,6 @@
   <nav><a href="../index.html">Início</a><a href="index.html">Blog</a><a href="../privacidade.html">Privacidade</a><a href="../termos.html">Termos</a><a href="mailto:suporte.ezer.app@gmail.com">Contato</a></nav>
   <p style="margin-top:10px">Ezer.app © 2026 Souza Apps</p>
 </footer>
+<script src="../ezer-ads.js"></script>
 </body>
 </html>

@@ -40,10 +40,15 @@
   .lista a.post { display:block; background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px 18px; margin-bottom:12px; text-decoration:none; color:var(--text); }
   .lista a.post strong { display:block; color:var(--navy); font-size:18px; margin-bottom:4px; }
   .lista a.post span { color:var(--muted); font-size:15px; line-height:1.5; display:block; }
+  main p a, main li a, .nota a { color:var(--navy); }
   .mais { margin-top:30px; font-size:15px; } .mais a { color:var(--navy); }
   footer { padding-top:30px; padding-bottom:40px; text-align:center; font-size:13px; color:var(--muted); }
   footer a { color:var(--navy); margin:0 8px; }
+  .ezer-ad { margin:26px 0; } .ezer-ad:empty { margin:0; }
+  .leia { margin:34px 0 6px; } .leia h2 { margin-top:0; }
+  .prox { display:block; background:var(--navy); color:var(--bg); text-decoration:none; font-weight:700; border-radius:12px; padding:14px 18px; margin-top:14px; }
   @media (prefers-color-scheme: dark) {
+    .prox { color:#1A1A2E; }
     :root { --bg:#1A1A2E; --card:#252540; --navy:#E8D9B8; --text:#E8E4D8; --muted:#A5ABB8; --border:#2E2E4E; }
     .btn { color:#1A1A2E; }
   }
@@ -66,7 +71,8 @@
 <p>Um dos hábitos mais antigos da vida espiritual é a releitura. O salmista diz que medita na lei do Senhor “de dia e de noite” (Salmos 1.2). Meditar é, em boa medida, voltar ao mesmo texto muitas vezes, deixando que ele diga coisas diferentes em fases diferentes da vida.</p>
 <h2>Favoritos e diário juntos</h2>
 <p>Os favoritos combinam bem com o <a href="meu-diario.html">diário</a>: o primeiro guarda o texto que tocou você, o segundo guarda o que você pensou ao lê-lo. Juntos, formam um pequeno arquivo pessoal da sua caminhada.</p>
-<div class="cta"><p><strong>Experimente no Ezer.app</strong></p><p style="color:var(--muted);font-size:15px">Gratuito, em português. Baixe o aplicativo ou use direto no navegador.</p>
+<div class="ezer-ad"></div>
+<div class="ezer-ad"></div><div class="leia"><h2>Leia também</h2><div class="lista"><a class="post" href="personalizacao.html"><strong>Temas, fonte e compartilhamento: leia do seu jeito</strong><span>Temas visuais, tamanho da fonte e estilos para compartilhar o pensamento do dia.</span></a><a class="post" href="lembretes-e-widget.html"><strong>Lembretes e widget: não deixe o hábito esfriar</strong><span>Como usar o lembrete diário e o widget na tela inicial para manter a constância.</span></a></div><a class="prox" href="personalizacao.html">Próximo artigo →</a></div><div class="cta"><p><strong>Experimente no Ezer.app</strong></p><p style="color:var(--muted);font-size:15px">Gratuito, em português. Baixe o aplicativo ou use direto no navegador.</p>
 <a class="btn" href="../index.html">Baixar o aplicativo</a><a class="btn sec" href="../app/">Usar no navegador</a></div>
 <p class="mais"><a href="index.html">← Todos os artigos do blog</a></p>
 </main>
@@ -74,5 +80,6 @@
   <nav><a href="../index.html">Início</a><a href="index.html">Blog</a><a href="../privacidade.html">Privacidade</a><a href="../termos.html">Termos</a><a href="mailto:suporte.ezer.app@gmail.com">Contato</a></nav>
   <p style="margin-top:10px">Ezer.app © 2026 Souza Apps</p>
 </footer>
+<script src="../ezer-ads.js"></script>
 </body>
 </html>

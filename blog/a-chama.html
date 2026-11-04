@@ -40,10 +40,15 @@
   .lista a.post { display:block; background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px 18px; margin-bottom:12px; text-decoration:none; color:var(--text); }
   .lista a.post strong { display:block; color:var(--navy); font-size:18px; margin-bottom:4px; }
   .lista a.post span { color:var(--muted); font-size:15px; line-height:1.5; display:block; }
+  main p a, main li a, .nota a { color:var(--navy); }
   .mais { margin-top:30px; font-size:15px; } .mais a { color:var(--navy); }
   footer { padding-top:30px; padding-bottom:40px; text-align:center; font-size:13px; color:var(--muted); }
   footer a { color:var(--navy); margin:0 8px; }
+  .ezer-ad { margin:26px 0; } .ezer-ad:empty { margin:0; }
+  .leia { margin:34px 0 6px; } .leia h2 { margin-top:0; }
+  .prox { display:block; background:var(--navy); color:var(--bg); text-decoration:none; font-weight:700; border-radius:12px; padding:14px 18px; margin-top:14px; }
   @media (prefers-color-scheme: dark) {
+    .prox { color:#1A1A2E; }
     :root { --bg:#1A1A2E; --card:#252540; --navy:#E8D9B8; --text:#E8E4D8; --muted:#A5ABB8; --border:#2E2E4E; }
     .btn { color:#1A1A2E; }
   }
@@ -59,6 +64,7 @@
 <p>Todo mundo sabe que a regularidade importa, mas poucos têm uma forma concreta de enxergá-la. Ver a sequência crescer ajuda a perceber que o hábito está se formando, e dá um motivo a mais para abrir o aplicativo num dia em que o ânimo está baixo. Mas há um risco, e vale ser honesto sobre ele: um contador de dias pode virar fonte de culpa, ou transformar o devocional em tarefa para cumprir.</p>
 <h2>A pausa de misericórdia</h2>
 <p>Por causa desse risco, a Chama tem um recurso chamado <strong>pausa de misericórdia</strong>. Depois que você alcança sete dias seguidos, passa a ter direito a uma pausa a cada 30 dias. Se você perder um dia, a pausa pode ser usada para que a sequência não seja zerada. Ela existe porque a vida real tem doença, viagem, plantão, filho acordado a noite toda.</p>
+<div class="ezer-ad"></div>
 <blockquote>“O Senhor é compassivo e misericordioso, paciente e cheio de amor.” (Salmos 103.8)</blockquote>
 <p>A mensagem por trás da pausa é a mesma do Evangelho: a graça vem antes do desempenho. Deus não nos ama mais por termos uma sequência longa, e nem menos quando ela recomeça.</p>
 <h2>Sincronizada na sua conta</h2>
@@ -69,7 +75,7 @@
 <li>Se a sequência zerar, recomece sem drama. O que vale é o próximo dia.</li>
 <li>Nos dias difíceis, leia pouco, mas leia. Um versículo e uma oração curta já são devocional.</li>
 </ul>
-<div class="cta"><p><strong>Experimente no Ezer.app</strong></p><p style="color:var(--muted);font-size:15px">Gratuito, em português. Baixe o aplicativo ou use direto no navegador.</p>
+<div class="ezer-ad"></div><div class="leia"><h2>Leia também</h2><div class="lista"><a class="post" href="duplas.html"><strong>Duplas: orar e ler junto com um amigo</strong><span>Como funciona o devocional em dupla, os propósitos compartilhados e o chat.</span></a><a class="post" href="grupos-de-jejum.html"><strong>Grupos de jejum: jejuar em comunidade</strong><span>Tipos de jejum disponíveis, como criar um grupo e acompanhar o progresso coletivo.</span></a></div><a class="prox" href="duplas.html">Próximo artigo →</a></div><div class="cta"><p><strong>Experimente no Ezer.app</strong></p><p style="color:var(--muted);font-size:15px">Gratuito, em português. Baixe o aplicativo ou use direto no navegador.</p>
 <a class="btn" href="../index.html">Baixar o aplicativo</a><a class="btn sec" href="../app/">Usar no navegador</a></div>
 <p class="mais"><a href="index.html">← Todos os artigos do blog</a></p>
 </main>
@@ -77,5 +83,6 @@
   <nav><a href="../index.html">Início</a><a href="index.html">Blog</a><a href="../privacidade.html">Privacidade</a><a href="../termos.html">Termos</a><a href="mailto:suporte.ezer.app@gmail.com">Contato</a></nav>
   <p style="margin-top:10px">Ezer.app © 2026 Souza Apps</p>
 </footer>
+<script src="../ezer-ads.js"></script>
 </body>
 </html>
