@@ -136,6 +136,16 @@
     .botao-iphone:hover { background: var(--azul-fundo); }
     .botao-iphone:active { transform: scale(0.98); }
 
+    /* Botão Web com fundo dourado e texto/setinha em azul */
+    .botao-web {
+      background: var(--dourado);
+      color: var(--azul);
+      transition: transform 0.15s ease, filter 0.15s ease;
+    }
+    .botao-web svg { color: var(--azul); }
+    .botao-web:hover { filter: brightness(1.08); }
+    .botao-web:active { transform: scale(0.98); }
+
     .aviso-iphone {
       margin-top: -4px;
       font-size: 0.85rem;
@@ -149,7 +159,7 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .botao-android, .botao-iphone { transition: none; }
+      .botao-android, .botao-iphone, .botao-web { transition: none; }
     }
   </style>
 </head>
@@ -196,11 +206,12 @@
       </a>
       <p class="aviso-iphone">Deixe seu contato e avisamos quando o Ezer.app chegar ao iPhone.</p>
       
-        <a class="botao botao-android" href="https://ezerapp.blog/app/" target="_blank" rel="noopener">
+      <!-- WEB APP -->
+      <a class="botao botao-web" href="https://ezerapp.blog/app/" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M12 4v11"/><path d="M7 11l5 5 5-5"/><path d="M5 20h14"/>
         </svg>
-        Usar no navegador
+        Usar no Navegador
       </a>
 
     </div>
