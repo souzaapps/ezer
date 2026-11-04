@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ezer.app — Sua vida com Deus, um dia de cada vez</title>
+  <meta name="description" content="Devocionais diários, devocionais em dupla e jejum em grupo. Baixe o Ezer.app.">
+  <meta property="og:title" content="Ezer.app — Sua vida com Deus, um dia de cada vez">
+  <meta property="og:description" content="Devocionais diários, devocionais em dupla e jejum em grupo.">
+  <meta name="theme-color" content="#F7F1E8">
+
+  <style>
+    /* ===== CORES DO APP — ajuste aqui ===== */
+    :root {
+      --creme: #F7F1E8;
+      --azul: #173759;
+      --azul-suave: rgba(23, 55, 89, 0.72);
+      --azul-linha: rgba(23, 55, 89, 0.2);
+      --azul-fundo: rgba(23, 55, 89, 0.06);
+      --dourado: #C99252;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { min-height: 100%; }
+
+    body {
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: max(24px, env(safe-area-inset-top)) 20px max(24px, env(safe-area-inset-bottom));
+      background: var(--creme);
+      color: var(--azul);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    .logo {
+      height: 120px;
+      margin: 0 auto 20px;
+    }
+    .logo img {
+      display: block;
+      height: 100%;
+      width: auto;
+      max-width: 100%;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+    h1 span { color: var(--dourado); }
+
+    .traco {
+      width: 56px;
+      height: 4px;
+      margin: 14px auto 16px;
+      border-radius: 4px;
+      background: var(--dourado);
+    }
+
+    .texto {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: var(--azul-suave);
+      margin-bottom: 20px;
+    }
+
+    .recursos {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .recursos li {
+      padding: 8px 14px;
+      border: 1px solid var(--azul-linha);
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      background: var(--azul-fundo);
+    }
+
+    .botoes {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .botao {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      min-height: 56px;
+      padding: 0 20px;
+      border-radius: 14px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .botao svg { width: 20px; height: 20px; flex: none; }
+
+    .botao-android {
+      background: var(--azul);
+      color: var(--creme);
+      transition: transform 0.15s ease, filter 0.15s ease;
+    }
+    .botao-android svg { color: var(--dourado); }
+    .botao-android:hover { filter: brightness(1.15); }
+    .botao-android:active { transform: scale(0.98); }
+
+    .botao-iphone {
+      border: 1.5px solid var(--azul);
+      color: var(--azul);
+      background: transparent;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+    .botao-iphone svg { color: var(--dourado); }
+    .botao-iphone:hover { background: var(--azul-fundo); }
+    .botao-iphone:active { transform: scale(0.98); }
+
+    .aviso-iphone {
+      margin-top: -4px;
+      font-size: 0.85rem;
+      line-height: 1.4;
+      color: var(--azul-suave);
+    }
+
+    .botao:focus-visible {
+      outline: 3px solid var(--dourado);
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .botao-android, .botao-iphone { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+
+    <!-- LOGO: troque o endereço em src pela URL da sua logo -->
+    <div class="logo">
+      <img src="https://raw.githubusercontent.com/gabriellimasouzza/link/refs/heads/main/icon.png" alt="">
+    </div>
+
+    <!-- Se a sua logo já trouxer o nome "Ezer.app" escrito, apague esta linha e a do traço abaixo -->
+    <h1>Ezer<span>.app</span></h1>
+    <div class="traco"></div>
+
+    <p class="texto">Sua vida com Deus, um dia de cada vez.</p>
+
+    <ul class="recursos">
+      <li>Devocionais diários</li>
+      <li>Devocionais em dupla</li>
+      <li>Séries devocionais por temas</li>
+      <li>Ouvir devocionais</li>
+      <li>Jejum em grupo</li>
+      <li>Sequência diária</li>
+    </ul>
+
+    <div class="botoes">
+
+      <!-- ANDROID: troque o href pelo link do app na Play Store -->
+      <a class="botao botao-android" href="https://play.google.com/store/apps/details?id=com.ezer.app&hl=pt_BR" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 4v11"/><path d="M7 11l5 5 5-5"/><path d="M5 20h14"/>
+        </svg>
+        Baixar para Android
+      </a>
+
+      <!-- IPHONE: lista de espera (formulário do Google). Troque o href se mudar o formulário -->
+      <a class="botao botao-iphone" href="https://forms.gle/BSWZvxVNJFdDM3EHA" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/>
+        </svg>
+        iPhone — entrar na lista de espera
+      </a>
+      <p class="aviso-iphone">Deixe seu contato e avisamos quando o Ezer.app chegar ao iPhone.</p>
+
+    </div>
+
+  </main>
+</body>
+</html>
