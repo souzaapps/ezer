@@ -207,15 +207,11 @@
 
   <script>
     const API_BASE = 'https://api.counterapi.dev/v2/ezer-app';
-    const API_KEY = 'ut_P2aF1yA3bOzMH19ZQa8TvIkqF2wDkK3M1oOivrkh';
 
     function contar(contador) {
       fetch(`${API_BASE}/${contador}/up`, {
         method: 'GET',
-        keepalive: true,
-        headers: {
-          'Authorization': `Bearer ${API_KEY}`
-        }
+        keepalive: true
       }).catch(() => {});
     }
 
